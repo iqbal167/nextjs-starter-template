@@ -5,31 +5,38 @@ Folder ini berisi contoh-contoh halaman untuk Next.js project dengan berbagai ti
 ## File yang tersedia:
 
 ### Basic Examples (Tailwind CSS)
+
 #### 1. `simple-page.tsx`
+
 - Halaman statis sederhana
 - Menggunakan Tailwind CSS untuk styling
 - Cocok untuk halaman informasi atau landing page
 
 #### 2. `page-example.tsx`
+
 - Halaman interaktif dengan state management
 - Menggunakan React Hooks (useState)
 - Contoh form input dan counter
 - Client-side rendering
 
 ### shadcn/ui Examples (Recommended)
+
 #### 3. `shadcn-simple-page.tsx`
+
 - Halaman statis menggunakan komponen shadcn/ui
 - Implementasi Card, Button, Badge, Alert
 - Design system yang konsisten
 - Accessibility built-in
 
 #### 4. `shadcn-interactive-page.tsx`
+
 - Halaman interaktif dengan Tabs navigation
 - Form dengan Input, Label, Dialog
 - Counter dan Task manager
 - State management dengan React hooks
 
 #### 5. `shadcn-dashboard-page.tsx`
+
 - Dashboard lengkap dengan statistik
 - User management dengan CRUD operations
 - Search dan filter functionality
@@ -49,6 +56,7 @@ Folder ini berisi contoh-contoh halaman untuk Next.js project dengan berbagai ti
 ## Cara menggunakan:
 
 ### Opsi 1: Copy ke app directory
+
 ```bash
 # Copy file ke app directory sebagai page
 mkdir app/example
@@ -60,6 +68,7 @@ cp examples/shadcn-simple-page.tsx app/simple/page.tsx
 ```
 
 ### Opsi 2: Import sebagai component
+
 ```tsx
 import ShadcnSimplePage from '../examples/shadcn-simple-page';
 import ShadcnInteractivePage from '../examples/shadcn-interactive-page';
@@ -75,6 +84,7 @@ export default function MyPage() {
 ```
 
 ### Opsi 3: Jalankan sebagai route
+
 1. Buat folder baru di `app/` directory
 2. Copy salah satu file example ke folder tersebut dengan nama `page.tsx`
 3. Akses melalui browser di route yang sesuai
@@ -82,6 +92,7 @@ export default function MyPage() {
 ## Setup Requirements:
 
 ### Untuk shadcn/ui examples:
+
 ```bash
 # Install komponen yang diperlukan (sudah terinstall)
 npx shadcn@latest add button card input label badge separator tabs alert dialog
@@ -91,6 +102,7 @@ npm install class-variance-authority clsx tailwind-merge lucide-react
 ```
 
 ## Catatan:
+
 - **Recommended**: Gunakan shadcn/ui examples untuk konsistensi design system
 - File dengan 'use client' directive akan di-render di client-side
 - shadcn/ui components sudah include accessibility dan dark mode support

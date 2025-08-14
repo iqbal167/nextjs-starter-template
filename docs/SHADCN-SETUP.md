@@ -23,6 +23,7 @@ npm run shadcn:help
 ### Menggunakan Script Manual
 
 **Linux/macOS:**
+
 ```bash
 # Berikan permission execute
 chmod +x scripts/install-shadcn-components.sh
@@ -32,6 +33,7 @@ chmod +x scripts/install-shadcn-components.sh
 ```
 
 **Windows PowerShell:**
+
 ```powershell
 # Install komponen
 .\scripts\install-shadcn-components.ps1 basic
@@ -40,7 +42,9 @@ chmod +x scripts/install-shadcn-components.sh
 ## 📦 Available Component Sets
 
 ### 1. Basic Components (`npm run shadcn:basic`)
+
 Komponen essential untuk memulai:
+
 - `button` - Tombol dengan berbagai variant
 - `card` - Container untuk konten
 - `input` - Input field
@@ -48,7 +52,9 @@ Komponen essential untuk memulai:
 - `badge` - Label kecil untuk status
 
 ### 2. Form Components (`npm run shadcn:forms`)
+
 Komponen untuk form dan input:
+
 - `input` - Text input
 - `label` - Form labels
 - `textarea` - Multi-line text input
@@ -59,7 +65,9 @@ Komponen untuk form dan input:
 - `form` - Form wrapper dengan validation
 
 ### 3. Layout Components (`npm run shadcn:layout`)
+
 Komponen untuk layout dan struktur:
+
 - `card` - Content containers
 - `separator` - Visual dividers
 - `tabs` - Tab navigation
@@ -68,7 +76,9 @@ Komponen untuk layout dan struktur:
 - `collapsible` - Expandable sections
 
 ### 4. Feedback Components (`npm run shadcn:feedback`)
+
 Komponen untuk notifikasi dan feedback:
+
 - `alert` - Alert messages
 - `dialog` - Modal dialogs
 - `toast` - Toast notifications (deprecated, use sonner)
@@ -77,21 +87,27 @@ Komponen untuk notifikasi dan feedback:
 - `progress` - Progress indicators
 
 ### 5. Data Components (`npm run shadcn:data`)
+
 Komponen untuk menampilkan data:
+
 - `table` - Data tables
 - `pagination` - Page navigation
 - `command` - Command palette
 - `data-table` - Advanced data table
 
 ### 6. Navigation Components (`npm run shadcn:navigation`)
+
 Komponen untuk navigasi:
+
 - `menubar` - Menu bars
 - `breadcrumb` - Breadcrumb navigation
 - `navigation-menu` - Navigation menus
 - `dropdown-menu` - Dropdown menus
 
 ### 7. Advanced Components (`npm run shadcn:advanced`)
+
 Komponen advanced:
+
 - `calendar` - Date picker calendar
 - `date-picker` - Date selection
 - `popover` - Floating content
@@ -101,6 +117,7 @@ Komponen advanced:
 ## 🛠️ Manual Installation
 
 ### Install Specific Components
+
 ```bash
 # Install satu komponen
 npm run shadcn:add button
@@ -110,6 +127,7 @@ npm run shadcn:add button card input label
 ```
 
 ### Install dengan npx langsung
+
 ```bash
 # Install komponen langsung
 npx shadcn@latest add button card input
@@ -121,6 +139,7 @@ npx shadcn@latest add button --yes
 ## 📁 File Structure
 
 Setelah install, komponen akan tersimpan di:
+
 ```
 src/
 ├── components/
@@ -136,25 +155,33 @@ src/
 ## 🎨 Usage Examples
 
 ### Basic Button Usage
+
 ```tsx
-import { Button } from "@/components/ui/button"
+import { Button } from '@/components/ui/button';
 
 export default function MyComponent() {
   return (
     <div>
       <Button>Default Button</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="outline">Outline</Button>
-      <Button variant="ghost">Ghost</Button>
-      <Button variant="destructive">Destructive</Button>
+      <Button variant='secondary'>Secondary</Button>
+      <Button variant='outline'>Outline</Button>
+      <Button variant='ghost'>Ghost</Button>
+      <Button variant='destructive'>Destructive</Button>
     </div>
-  )
+  );
 }
 ```
 
 ### Card with Content
+
 ```tsx
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 
 export default function MyCard() {
   return (
@@ -167,22 +194,23 @@ export default function MyCard() {
         <p>Card content</p>
       </CardContent>
     </Card>
-  )
+  );
 }
 ```
 
 ### Form with Input
+
 ```tsx
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 export default function MyForm() {
   return (
-    <div className="space-y-2">
-      <Label htmlFor="email">Email</Label>
-      <Input id="email" type="email" placeholder="Enter your email" />
+    <div className='space-y-2'>
+      <Label htmlFor='email'>Email</Label>
+      <Input id='email' type='email' placeholder='Enter your email' />
     </div>
-  )
+  );
 }
 ```
 
@@ -199,16 +227,19 @@ export default function MyForm() {
 ### Common Issues
 
 **1. Permission denied (Linux/macOS)**
+
 ```bash
 chmod +x scripts/install-shadcn-components.sh
 ```
 
 **2. PowerShell execution policy (Windows)**
+
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 **3. Components not found**
+
 ```bash
 # Make sure you're in the project root
 cd /path/to/your/project
@@ -216,6 +247,7 @@ npm run shadcn:basic
 ```
 
 **4. TypeScript errors**
+
 ```bash
 # Restart TypeScript server in your editor
 # Or restart development server

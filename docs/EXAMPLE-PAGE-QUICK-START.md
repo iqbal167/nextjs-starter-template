@@ -5,6 +5,7 @@ Panduan cepat untuk menjalankan contoh halaman dengan shadcn/ui components.
 ## 🚀 Langkah Cepat
 
 ### 1. Jalankan Dashboard Example
+
 ```bash
 # Copy dashboard ke app directory
 mkdir -p src/app/dashboard
@@ -17,6 +18,7 @@ npm run dev
 ```
 
 ### 2. Jalankan Interactive Example
+
 ```bash
 # Copy interactive page ke app directory
 mkdir -p src/app/interactive
@@ -26,6 +28,7 @@ cp examples/shadcn-interactive-page.tsx src/app/interactive/page.tsx
 ```
 
 ### 3. Jalankan Simple Example
+
 ```bash
 # Copy simple page ke app directory
 mkdir -p src/app/simple
@@ -37,6 +40,7 @@ cp examples/shadcn-simple-page.tsx src/app/simple/page.tsx
 ## 🎨 Customization
 
 ### Mengubah Theme
+
 Edit file `src/app/globals.css` untuk mengubah color scheme:
 
 ```css
@@ -48,6 +52,7 @@ Edit file `src/app/globals.css` untuk mengubah color scheme:
 ```
 
 ### Menambah Komponen Baru
+
 ```bash
 # Install komponen tambahan
 npx shadcn@latest add select checkbox switch textarea
@@ -59,6 +64,7 @@ npx shadcn@latest add --help
 ## 📱 Responsive Design
 
 Semua examples sudah responsive dengan breakpoints:
+
 - `sm:` - 640px+
 - `md:` - 768px+
 - `lg:` - 1024px+
@@ -67,18 +73,21 @@ Semua examples sudah responsive dengan breakpoints:
 ## 🔧 Troubleshooting
 
 ### Error: Module not found '@/components/ui/...'
+
 ```bash
 # Pastikan path alias sudah dikonfigurasi di tsconfig.json
 # File sudah dikonfigurasi dengan benar
 ```
 
 ### Error: Tailwind classes tidak bekerja
+
 ```bash
 # Restart development server
 npm run dev
 ```
 
 ### Error: Icons tidak muncul
+
 ```bash
 # Install lucide-react jika belum
 npm install lucide-react
